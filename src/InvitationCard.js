@@ -2,7 +2,7 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import './InvitationCard.css';
 import chakra from './chakra.png';
-import g_text from './g_text.PNG';
+// import g_text from './g_text.PNG';
 import ganeshaImage from './ganesh-37.png';
 import ReactPlayer from 'react-player';
 
@@ -37,7 +37,7 @@ const Ganesha = () => (
 
 const GaneshaText = () => (
   <div className="ganesha-text-container">
-    <img src={g_text} alt="Lord Ganesha Text" className="ganesha-text" />
+    {/* <img src={g_text} alt="Lord Ganesha Text" className="ganesha-text" /> */}
   </div>
 );
 

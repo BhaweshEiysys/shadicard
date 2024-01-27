@@ -1,7 +1,8 @@
 import React, { useEffect, useRef } from 'react';
 import './App.css';
 import InvitationCard from './InvitationCard';
-import music from './Kudmayi.mp3'; // Replace with the path to your music file
+
+const music = 'https://revcsv.s3.amazonaws.com/Kudmayi.mp3';
 
 function App() {
   const audioRef = useRef(null);
