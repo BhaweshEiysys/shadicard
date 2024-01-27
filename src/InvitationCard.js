@@ -1,16 +1,10 @@
 import React from 'react';
-import GoogleMapReact from 'google-map-react';
+
 import './InvitationCard.css';
 import chakra from './chakra.png';
-// import g_text from './g_text.PNG';
-import ganeshaImage from './ganesh-37.png';
-import ReactPlayer from 'react-player';
 
-const LocationPin = () => (
-  <div className="location-pin">
-    <i className="fas fa-map-marker-alt"></i>
-  </div>
-);
+import ganeshaImage from './ganesh-37.png';
+
 
 const DecorationHeart = () => (
   <div className="decoration-heart">&#10084;</div>
@@ -54,36 +48,16 @@ const MangalikKaryakram = () => (
 );
 
 const InvitationCard = () => {
-  const mapApiKey = 'AIzaSyAsktpqPtGt7W3IMRUDaep13QjdP-IiytE';
+ 
 
-  const mapProps = {
-    center: { lat: 25.709541, lng: 82.6862606 },
-    zoom: 15,
-  };
-
-  const markerProps = {
-    lat: 25.709541,
-    lng: 82.6862606,
-  };
+  
 
   return (
     <div className="invitation-card">
-      {/* <ReactPlayer
-        url="https://youtu.be/j5-dKf4yINM"
-        playing={true}
-        loop={true}
-        muted={true}
-        width="100%"
-        height="100%"
-        style={{ position: 'absolute', top: 0, left: 0 }}
-      /> */}
-
-
+    
 
       <GaneshaImage />
-      {/* <br/> <br/> <br/> */}
-      {/* <GaneshaText /> */}
-      {/* <br/> <br/> <br/><br/> <br/> <br/><br/> <br/> <br/> */}
+     
       <Ganesha />
       
       <div className="mantra-container">
