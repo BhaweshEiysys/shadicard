@@ -29,11 +29,6 @@ const Ganesha = () => (
   </div>
 );
 
-const GaneshaText = () => (
-  <div className="ganesha-text-container">
-    {/* <img src={g_text} alt="Lord Ganesha Text" className="ganesha-text" /> */}
-  </div>
-);
 
 const MangalikKaryakram = () => (
   <div className="mangalik-karyakram">
