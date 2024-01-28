@@ -1,5 +1,5 @@
-/* InvitationCard.css */
 .invitation-card {
+  position: relative;
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
@@ -7,13 +7,24 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
   text-align: center;
-  z-index: -100%;
+  overflow: hidden;
 }
+
+#background-video-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  left: 0%;
+  z-index: -1;
+}
+
 .invitation-header {
-  background-color: #d42e2e;;
-  padding: 10px;
+  background-color: #B68D40;;
+  /* padding: 10px; */
   border-radius: 8px 8px 0 0;
 }
+
 .animated-text {
   animation: fadeIn 3s ease-in-out;
   color: white;
@@ -33,7 +44,7 @@
 }
 
 .invitation-text {
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.5;
 }
 
@@ -49,14 +60,12 @@
   font-size: 2rem;
   color: #e8491d;
 }
-/* InvitationCard.css */
-/* ... (existing styles) */
 
 .attend-text {
   margin-top: 20px;
   font-size: 1.2rem;
   color: #fff;
-  background-color: #e8491d;
+  background-color: #05044e;
   padding: 10px;
   border-radius: 8px;
   cursor: pointer;
@@ -66,8 +75,6 @@
 .attend-text:hover {
   background-color: #c33b19;
 }
-/* InvitationCard.css */
-/* ... (existing styles) */
 
 .decoration-container {
   display: flex;
@@ -107,45 +114,34 @@
   }
 }
 
-/* .ganesha-image-container {
-  text-align: center;
-}
-.ganesha-text-container{
-  text-align: center;
-} */
-.ganesha-image-container {
-  text-align: center;
-  margin-bottom: -20px; /* Adjust this value as needed */
-    /* position: relative; */
-
-}
-
+.ganesha-image-container,
 .ganesha-text-container {
   text-align: center;
-  margin-bottom: -10px; /* Adjust this value as needed */
+  margin-bottom: -20px; /* Adjust this value as needed */
 }
 
 .ganesha-image {
   max-height: 200px;
-  /* object-fit: cover; */
-  /* border-radius: 8px; */
-  /* margin-bottom: 20px; */
 }
+
 .ganesha-text {
   max-height: 250px;
   object-fit: cover;
   border-radius: 4px;
-  margin-bottom: -280px;
+  margin-bottom: -280px; /* Adjust this value as needed */
 }
-/* .mantra-container {
+
+.mantra-container {
   text-align: center;
   margin-top: 10px;
-} */
+}
 
 .mantra-text {
-  font-size: 1.2rem;
+  font-size: 2rem;
   line-height: 1.5;
-  color: #e8491d;
+  color: #fdfdfd;
+  animation: fadeIn 3s ease-in;
+  background-color: 	#B68D40;
 }
 
 .decoration-container {
@@ -167,40 +163,6 @@
 .decoration-flower {
   animation: rotate 3s infinite;
 }
-
-@keyframes heartbeat {
-  0%, 100% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.2);
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-/* InvitationCard.css */
-/* ... (existing styles) */
-
-.sun-circle {
-  position: absolute;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-color: #ff963b;
-  animation: rotateSun 5s linear infinite;
-  z-index: -1;
-  left: 25%;
-  right: 50%;
-  transform: translateX(-50%);
-}
-/* Existing styles... */
 
 .mangalik-karyakram {
   text-align: center;
@@ -208,45 +170,8 @@
 }
 
 .mangalik-text {
-  font-family: 'Baloo 2', cursive; /* You can change the font-family as per your choice */
+  font-family: 'Baloo 2', cursive;
   font-size: 1.2rem;
   line-height: 1.5;
-  color: #da02fb;
+  color: #ffffff;
 }
-
-/* Existing styles... */
-
-
-
-
-
-@keyframes rotateSun {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-chakra {
-  position: absolute;
-  width: 50px; /* Adjust the size of the Chakra */
-  height: 50px; /* Adjust the size of the Chakra */
-  border-radius: 50%;
-  background-color: #00bcd4; /* Change the color as needed */
-  animation: rotateChakra 5s linear infinite; /* Adjust animation duration as needed */
-  z-index: 1; /* Place the Chakra above the Ganesha image */
-}
-
-@keyframes rotateChakra {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-
-/* ... (existing styles) */

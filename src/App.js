@@ -1,3 +1,4 @@
+// App.js
 import React, { useEffect, useRef } from 'react';
 import './App.css';
 import InvitationCard from './InvitationCard';
